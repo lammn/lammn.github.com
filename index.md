@@ -12,6 +12,7 @@ title: ホーム
 [https://github.com/EC-CUBE/ec-cube](https://github.com/EC-CUBE/ec-cube)
 
 ## Index
+- [EC-CUBE Feature List](/features_list.html)
 - [Install Guide](/install.html)
     - [Xampp + Windows install](/xampp_install.html)
     - [WebMatrix install](/webmatrix_install.html)
