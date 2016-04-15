@@ -33,6 +33,7 @@ Chỉ định đường dẫn `autoload.php`
 
 ![2016-03-15_16h51_22.png](https://qiita-image-store.s3.amazonaws.com/0/113212/7a421c7c-bccd-530f-392b-822aec590e8c.png)
 
+
 ##Tạo thiết lập PHPUnit
 
 Mở thiết lập bằng cách truy cập Run>EditConfigurations... 。

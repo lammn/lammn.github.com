@@ -5,21 +5,18 @@ title: Phát triển plugin cho version 3.0.9
 
 ---
 
-## Phát triển plugin cho version 3.0.9
+# Phát triển plugin cho version 3.0.9
 Trước phiên bản 3.0.9 thì sẽ làm theo các bước sau khi muốn tạo một plugin.
 
 1. Tạo những file bắt buộc
 2. Nén thư mục
 3. Install từ màn hình admin
 4. Enable plugin, sủ dụng
-
 Tại phiên bản 3.0.9 thì để tăng hiệu năng phát triển thì thêm vào các tính năng sau đây
-
 1. Hiển thị đanh sách plugin chưa được cài đặt
 2. Thao tác với plugin bằng câu lệnh console(cài đăt, enable, disable)
 
-### **Cấu trúc thư mục**
-
+## **Cấu trúc thư mục**
 EC-CUBE3 Root Directory > app > Plugin
 
 ```
@@ -33,7 +30,8 @@ EC-CUBE3 Root Directory
 │       │      ├── CategoryContent  ☆Thư mục chứa plugin của tutorial này
 ```
 Vì lẽ đó, sẽ tạo cấu trúc thư mục giống như trên, tiến hành viết code trên thư mục đó.
-# Bắt đầu tạo plugin thôi!!!
+
+## Bắt đầu tạo plugin thôi!!!
 Lần này sẽ tạo một plugin tên là CategoryContext.Cái này đơn giản chỉ là thêm một form nhập liệu để giải thích về
 category mà thôi.
 
@@ -43,7 +41,7 @@ Front Page : Trang frontend , click vào category đã tạo , đơn giản hi�
 Dễ như ăn kẹo ấy mà !
 ```
 
-# Luồng tạo plugin
+## Luồng tạo plugin
 Tạo theo các bước như dưới đây。
 
 ### Chuẩn bị cài đặt plugin( Tạo folder )
@@ -102,7 +100,7 @@ Do lần này là tutorial nên chúng ta tạo các file như dưới đây và
 `event.yml : Định nghĩa event `
 
 ```yaml:event.yml
-記述なし
+De trong
 ```
 
 `PluginManager.php : Quản lý plugin (enable, disable, install , uninstall)`
@@ -161,12 +159,12 @@ class CategoryContentServiceProvider implements ServiceProviderInterface
 `Resource/doctrine/Plugin.CategoryContent.Entity.CategoryContent.dcm.yml`
 
 ```yaml:Resource/doctrine/Plugin.CategoryContent.Entity.CategoryContent.dcm.yml
-記述なし
+De trong
 ```
 Tao file giao diện `Resource/template/Admin/category.twig`
 
 ```twig:Resource/template/Admin/category.twig
-記述なし
+De trong
 ```
 
 Thao tác DB `Repository/CategoryContentRepository.php`
@@ -181,6 +179,7 @@ class CategoryContentRepository extends EntityRepository
 {
 }
 ```
+
 Migration `Migration/Version20160218160500.php`. Đặt tên file theo dạng Version[yyyymmddHHiiss].php
 
 ```php:Migration/Version20160218160500.php
@@ -202,6 +201,7 @@ class Version20160218160500 extends AbstractMigration
     }
 }
 ```
+
 Tạo Form `Form/Extension/CategoryContentExtension.php`
 
 ```php:Form/Extension/CategoryContentExtension.php
