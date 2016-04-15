@@ -9,7 +9,8 @@ title: システム要件
 
 ## Features List
 
-####Front Features List
+#### Front Features List
+
 
 | No | Category|Feature　Name|Feature Detail|Code Status
 |---|----|----|-------|---|
@@ -39,7 +40,7 @@ title: システム要件
 |24|  | Product Keyword Search | Tìm kiếm theo keyword(tên, brand...) của sản phẩm |　〇
 |25|  | Contact Form | Gửi message cho admin |　〇
 
-####Admin Features List
+#### Admin Features List
 
 | No | Category|Feature　Name|Feature Detail|Code Status
 |---|----|----|-------|---|
