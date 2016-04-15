@@ -1,6 +1,6 @@
 ---
 layout: default
-title: インストール方法
+title: Phương pháp cài đặt
 ---
 
 ---

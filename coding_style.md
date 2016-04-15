@@ -1,6 +1,6 @@
 ---
 layout: default
-title: コーディング規約
+title: Code standard
 ---
 
 ---
@@ -33,7 +33,6 @@ title: コーディング規約
 
 * Code PHP
   + Theo như [Symfony code standard](http://symfony.com/doc/current/contributing/code/standards.html)
-
   + Code mẫu(nhìn là có thể nắm gần hết quy tắc code)
 
 ```
