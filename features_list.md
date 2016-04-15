@@ -9,10 +9,9 @@ title: システム要件
 
 ## Features List
 
-#### Front Features List
+## Front Features List
 
-
-| No | Category|Feature　Name|Feature Detail|Code Status
+| No | Category |Feature Name |Feature Detail |Code Status
 |---|----|----|-------|---|
 |1|Product Intro| Product List | Hiển thị các sản phẩm đã đang ký theo từng category |　〇
 |2| | Product Thumbnail | Hiển thị sản phẩm trên trang danh sách sản phẩm dưới dạng thumbnail |　〇
@@ -40,9 +39,10 @@ title: システム要件
 |24|  | Product Keyword Search | Tìm kiếm theo keyword(tên, brand...) của sản phẩm |　〇
 |25|  | Contact Form | Gửi message cho admin |　〇
 
-#### Admin Features List
 
-| No | Category|Feature　Name|Feature Detail|Code Status
+## Admin Features List
+
+| No | Category |Feature Name |Feature Detail |Code Status
 |---|----|----|-------|---|
 |1| Auth Feature | Admin Login | Màn hình đăng nhập admin |　〇
 |2| | Add Admin | Có thể thêm admin  |　〇
