@@ -8,9 +8,13 @@ title: PHP Storm Debug
 # {{ page.title }}
 
 ## Môi trường
+
 Windows7
+
 PHPStorm 10.0.3
+
 Xampp
+
 ## Mục tiêu
 Có thể chạy debug từ PHPStorm chỉ bằng một nút bấm
 

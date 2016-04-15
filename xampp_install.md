@@ -26,6 +26,7 @@ date.timezone = Asia/Tokyo
 ```
 
 - Thiết lập module mở rộng (uncomment các dòng này)
+
 ```
 extension=php_fileinfo.dll
 extension=php_pdo_pgsql.dll

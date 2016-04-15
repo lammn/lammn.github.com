@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EC-CUBEのプラグインを作る(3.0.9向け)
+title: Phát triển plugin cho version 3.0.9
 ---
 
 ---
@@ -47,6 +47,7 @@ Dễ như ăn kẹo ấy mà !
 Tạo theo các bước như dưới đây。
 
 ### Chuẩn bị cài đặt plugin( Tạo folder )
+
 #### Thiết lập cơ bản
 1. Tạo thư mục chứa plugin
 1. Tạo file **config.yml**
@@ -61,6 +62,7 @@ Tạo theo các bước như dưới đây。
 1. Tạo file dcm.yml
 
 ### Xây dựng Plugin
+
 #### Tạo event
 1. Chỉnh sửa file **config.yml**
 1. Tạo file **event.yml**
@@ -79,7 +81,9 @@ Tạo theo các bước như dưới đây。
 
 ## Cài đặt plugin
 Trước tiên tạo thư mục theo cấu trúc sau `app/Plugin/CategoryContext`
+
 ### Tạo những file cài đặt cần thiết
+
 Tao file `config.yml`
 
 ```yaml:config.yml
@@ -241,7 +245,7 @@ class CategoryContent extends \Eccube\Entity\AbstractEntity
 File xử lý event `CategoryContentEvent.php`
 
 ```php:CategoryContentEvent.php
-記述なし
+De trong
 ```
 
 
@@ -301,6 +305,7 @@ class Version20160218160500 extends AbstractMigration
     }
 }
 ```
+
 ### Tạo PluginManager.php
 Sau khi tạo xong file migration , để tạo bảng thì chúng ta định nghĩa file `PluginManager.php`
 ```php:PluginManager.php
@@ -421,8 +426,8 @@ Plugin\CategoryContent\Entity\CategoryContent:
 
 
 ## Cấu trúc Plugin
-### Tạo event
 
+### Tạo event
 `Admin > Product > Category` truy cập vào link trên thì sẽ hiện ra màn hình nhập Category, Trong đó nhiệm vụ của plugin
 này là thêm một textarea vào để viết description cho category. Để thêm được chúng ta sẽ sử dụng form và thêm một item
 vào. Từ phiên bản 3.0.9 trở đi thì sử dụng HookPoints để bắt sự kiện. Nó được định nghĩa như dưới đây.
@@ -432,7 +437,6 @@ vào. Từ phiên bản 3.0.9 trở đi thì sử dụng HookPoints để bắt 
     - Chúng ta sẽ tạo thêm file mới dùng để xử lý event.
 
 ### config.yml
-
 Định nghĩa file sử lý event trong `config.yml`
 
 ```yaml:config.yml
@@ -498,6 +502,7 @@ Truy cập vào `Admin > Product > Add Cateogry` click nút `Create Category` n�
 
 
 ## Tạo form
+
 ### Định nghĩa các mục mở rộng
 Chúng ta định nghĩa item sẽ thêm vào form lưu dữ liệu nhé.
 
@@ -657,6 +662,7 @@ class CategoryContentServiceProvider implements ServiceProviderInterface
 
 ### Edit file config.yml
 Sau khi đã hoàn tất việc chỉnh sửa file ServiceProvider thì update lại nội dung file config.yml
+
 ```yaml:config.yml
 service:
     - CategoryContentServiceProvider
@@ -680,7 +686,6 @@ Và code cũng đã hoàn thành.
 Product/list.twig:
     - [onRenderProductList, NORMAL]
 ```
-
 
 ### Chỉnh sửa class handle event( thên xử lý hiển thị front )
 

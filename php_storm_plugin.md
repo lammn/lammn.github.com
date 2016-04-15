@@ -41,8 +41,11 @@ $app->register(new \Sorien\Provider\PimpleDumpProvider());
 sau đó access vào trang `http://localhost/eccube/html/index_dev.php/` sẽ thấy điều kì diệu xảy ra.
 
 # Tham khảo
+
 https://youtrack.jetbrains.com/issue/WI-17116
+
 https://github.com/Sorien/silex-idea-plugin
+
 https://github.com/Sorien/silex-pimple-dumper
 
 
