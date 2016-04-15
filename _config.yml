@@ -2,4 +2,4 @@ name: EC-CUBE3
 markdown: kramdown
 kramdown:
   input: GFM
-highlighter: pygments
+highlighter: rouge
