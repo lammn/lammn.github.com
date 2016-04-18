@@ -19,6 +19,7 @@ title: ホーム
 - PluginDev
     - [Plugin Tutorial](/plugin_dev.html)
     - [php app/console plugin:develop ](/plugin_console.html)
+    - [Plugin Sample Dev](/plugin_sample_dev.html)
 - Dev Guideline
     - [Code Standard](/coding_style.html)
     - [PHP Storm Plugin ](/php_storm_plugin.html)
